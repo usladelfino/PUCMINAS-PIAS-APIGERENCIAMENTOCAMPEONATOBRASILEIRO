@@ -12,7 +12,7 @@ namespace CampeonatoBrasileiroAPI.Messenger
     {
         public void SendMessage<T>(T message)
         {
-            var factory = new ConnectionFactory { HostName = "localhost", Port = 5672, UserName = "guest", Password = "guest"};
+            var factory = new ConnectionFactory { HostName = "https://campeonatobrasileiroapi.azure-api.net", Port = 5672, UserName = "guest", Password = "guest"};
             
             using (var connection = factory.CreateConnection())
             {
