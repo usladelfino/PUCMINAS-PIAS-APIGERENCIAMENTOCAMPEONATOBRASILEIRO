@@ -9,7 +9,7 @@ namespace MessageSubscriber
     {
         static void Main(string[] args)
         {
-            var factory = new ConnectionFactory { HostName = "localhost", Port = 5672, UserName = "guest", Password = "guest" };
+            var factory = new ConnectionFactory { HostName = "albatross.rmq.cloudamqp.com", Port = 5672, UserName = "xnxqvhzt", Password = "MgflbWbcULra2Zh_BuXzUXmw55GnOtAr", VirtualHost = "xnxqvhzt" };
 
             using (var connection = factory.CreateConnection())
             {
